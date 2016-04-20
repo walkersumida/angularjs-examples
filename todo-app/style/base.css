@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.view-container {
+    position: relative;
+}
+
+.view.ng-animate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 500px;
+}
+
+.view.ng-enter, .view.ng-leave {
+    transition: 0.5s cubic-bezier(.55, 0, .1, 1) all;
+}
+
+.view.ng-enter {
+    opacity: 0;
+}
+
+.view.ng-enter.ng-enter-active, .view.ng-leave {
+    opacity: 1;
+}
+
+.view.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+.todo-title {
+    font-size: 24px;
+}
