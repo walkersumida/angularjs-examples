@@ -31,3 +31,10 @@
 .todo-title {
     font-size: 24px;
 }
+
+.btn[disabled] {
+    background-color: #DFDFDF !important;
+    box-shadow: none;
+    color: #9F9F9F !important;
+    cursor: default;
+}
