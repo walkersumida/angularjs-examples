@@ -1,3 +1,7 @@
+<div class="input-field">
+    <input ng-model="todo.new" placeholder="TODO" id="todo-new" type="text" class="validate">
+    <button class="btn" ng-click="todo.add()">Add</button>
+</div>
 <ul>
     <li ng-repeat="rcd in todo.data">
         <div class="todo-title">{{ rcd.title }}</div>
