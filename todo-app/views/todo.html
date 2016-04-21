@@ -4,10 +4,13 @@
         <button class="btn" ng-disabled="todoForm.$invalid" ng-click="todoForm.$valid && todo.add()">
             Add
         </button>
+        <button class="btn" ng-disabled="!todo.existsDone()" ng-click="todo.clear()">
+            Clear x{{ (todo.data|filter:{ done: 'true', hidden: '!true' }).length }}
+        </button>
     </div>
 </form>
 <ul>
-    <li ng-repeat="rcd in todo.data">
+    <li ng-repeat="rcd in todo.data | filter: { hidden: '!true' }">
         <p>
             <input type="checkbox" id="todo-{{ $index }}" class="filled-in" ng-checked="rcd.done"
                    ng-click="todo.toggleDone(rcd)">

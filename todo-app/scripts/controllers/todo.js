@@ -8,6 +8,26 @@ angular.module('app')
             this.new = '';
         };
 
+        this.clear = function clear() {
+            for (var i = 0; i < this.data.length; i++) {
+                if (this.data[i].done === true) {
+                    this.data[i].hidden = true;
+                }
+            }
+        };
+
+        this.existsDone = function existsDone() {
+            for (var i = 0; i < this.data.length; i++) {
+                if (this.data[i].hidden === true) {
+                    continue;
+                }
+                if (this.data[i].done === true) {
+                    return true;
+                }
+            }
+            return false;
+        };
+
         this.toggleDone = function toggleDone(rcd) {
             rcd.done = !rcd.done;
         };
