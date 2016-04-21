@@ -8,6 +8,10 @@ angular.module('app')
             this.new = '';
         };
 
+        this.toggleDone = function toggleDone(rcd) {
+            rcd.done = !rcd.done;
+        };
+
         this._maxId = function _maxId() {
             ary = this.data;
             result = 0;

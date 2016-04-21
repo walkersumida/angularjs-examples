@@ -8,6 +8,12 @@
 </form>
 <ul>
     <li ng-repeat="rcd in todo.data">
-        <div class="todo-title">{{ rcd.title }}</div>
+        <p>
+            <input type="checkbox" id="todo-{{ $index }}" class="filled-in" ng-checked="rcd.done"
+                   ng-click="todo.toggleDone(rcd)">
+            <label for="todo-{{ $index }}" ng-class="{ completed: rcd.done }">
+                <span class="todo-title">{{ rcd.title }}</span>
+            </label>
+        </p>
     </li>
 </ul>

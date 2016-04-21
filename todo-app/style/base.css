@@ -38,3 +38,8 @@
     color: #9F9F9F !important;
     cursor: default;
 }
+
+.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
