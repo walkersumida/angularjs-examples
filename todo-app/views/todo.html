@@ -1,6 +1,6 @@
 <form name="todoForm" novalidate>
     <div class="input-field">
-        <input ng-model="todo.new" ng-required="true" placeholder="TODO" name="todoNew" type="text">
+        <input ng-model="todo.new" ng-required="true" placeholder="New TODO" name="todoNew" type="text">
         <button class="btn" ng-disabled="todoForm.$invalid" ng-click="todoForm.$valid && todo.add()">
             Add
         </button>
