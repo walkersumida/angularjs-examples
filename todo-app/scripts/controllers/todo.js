@@ -1,11 +1,11 @@
 angular.module('app')
     .controller('TodoController', [function () {
         this.data = window.TodoApp.todo.data;
-        this.new = "";
+        this.new = '';
 
         this.add = function add() {
             this.data.push({id: this._maxId() + 1, title: this.new});
-            this.new = "";
+            this.new = '';
         };
 
         this._maxId = function _maxId() {
