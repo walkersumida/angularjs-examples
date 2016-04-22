@@ -1,0 +1,89 @@
+<div class="row">
+    <div class="col s4 m4 l3">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Ideas</span>
+            </div>
+
+            <div class="card-panel teal">
+                <ul class="card-list" data-as-sortable="board.dragControlListeners" data-ng-model="kanban.task.type.ideas">
+                    <li data-ng-repeat="item in kanban.task.type.ideas" data-as-sortable-item>
+                        <div data-as-sortable-item-handle>
+                            <div class="row">
+                                <div class="col s12 m12 l12">
+                                    <span class="card-title">{{ item.title }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s4 m4 l3">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Not Started</span>
+            </div>
+
+            <div class="card-panel teal">
+                <ul class="card-list" data-as-sortable="board.dragControlListeners" data-ng-model="kanban.task.type.notStarted">
+                    <li data-ng-repeat="item in kanban.task.type.notStarted" data-as-sortable-item>
+                        <div data-as-sortable-item-handle>
+                            <div class="row">
+                                <div class="col s12 m12 l12">
+                                    <span class="card-title">{{ item.title }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s4 m4 l3">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">In Progress</span>
+            </div>
+
+            <div class="card-panel teal">
+                <ul class="card-list" data-as-sortable="board.dragControlListeners" data-ng-model="kanban.task.type.inProgress">
+                    <li data-ng-repeat="item in kanban.task.type.inProgress" data-as-sortable-item>
+                        <div data-as-sortable-item-handle>
+                            <div class="row">
+                                <div class="col s12 m12 l12">
+                                    <span class="card-title">{{ item.title }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s4 m4 l3">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Done</span>
+            </div>
+
+            <div class="card-panel teal">
+                <ul class="card-list" data-as-sortable="board.dragControlListeners" data-ng-model="kanban.task.type.done">
+                    <li data-ng-repeat="item in kanban.task.type.done" data-as-sortable-item>
+                        <div data-as-sortable-item-handle>
+                            <div class="row">
+                                <div class="col s12 m12 l12">
+                                    <span class="card-title">{{ item.title }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
