@@ -7,14 +7,7 @@
 
             <div class="card-panel teal">
                 <ul class="card-list" data-as-sortable="board.dragControlListeners" data-ng-model="kanban.task.type.ideas">
-                    <li data-ng-repeat="item in kanban.task.type.ideas" data-as-sortable-item>
-                        <div data-as-sortable-item-handle>
-                            <div class="row">
-                                <div class="col s12 m12 l12">
-                                    <span class="card-title">{{ item.title }}</span>
-                                </div>
-                            </div>
-                        </div>
+                    <li data-ng-repeat="item in kanban.task.type.ideas" data-as-sortable-item ng-include="'views/partials/card.html'">
                     </li>
                 </ul>
             </div>
@@ -29,14 +22,7 @@
 
             <div class="card-panel teal">
                 <ul class="card-list" data-as-sortable="board.dragControlListeners" data-ng-model="kanban.task.type.notStarted">
-                    <li data-ng-repeat="item in kanban.task.type.notStarted" data-as-sortable-item>
-                        <div data-as-sortable-item-handle>
-                            <div class="row">
-                                <div class="col s12 m12 l12">
-                                    <span class="card-title">{{ item.title }}</span>
-                                </div>
-                            </div>
-                        </div>
+                    <li data-ng-repeat="item in kanban.task.type.notStarted" data-as-sortable-item ng-include="'views/partials/card.html'">
                     </li>
                 </ul>
             </div>
@@ -51,14 +37,7 @@
 
             <div class="card-panel teal">
                 <ul class="card-list" data-as-sortable="board.dragControlListeners" data-ng-model="kanban.task.type.inProgress">
-                    <li data-ng-repeat="item in kanban.task.type.inProgress" data-as-sortable-item>
-                        <div data-as-sortable-item-handle>
-                            <div class="row">
-                                <div class="col s12 m12 l12">
-                                    <span class="card-title">{{ item.title }}</span>
-                                </div>
-                            </div>
-                        </div>
+                    <li data-ng-repeat="item in kanban.task.type.inProgress" data-as-sortable-item ng-include="'views/partials/card.html'">
                     </li>
                 </ul>
             </div>
@@ -73,14 +52,7 @@
 
             <div class="card-panel teal">
                 <ul class="card-list" data-as-sortable="board.dragControlListeners" data-ng-model="kanban.task.type.done">
-                    <li data-ng-repeat="item in kanban.task.type.done" data-as-sortable-item>
-                        <div data-as-sortable-item-handle>
-                            <div class="row">
-                                <div class="col s12 m12 l12">
-                                    <span class="card-title">{{ item.title }}</span>
-                                </div>
-                            </div>
-                        </div>
+                    <li data-ng-repeat="item in kanban.task.type.done" data-as-sortable-item ng-include="'views/partials/card.html'">
                     </li>
                 </ul>
             </div>
